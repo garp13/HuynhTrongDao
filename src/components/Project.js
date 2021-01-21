@@ -10,9 +10,22 @@ const Project = (props) => {
     }
     return(
         <div>
-            <h3>{name}</h3>
-            <p><b>Link Github: </b>{linkGithub}</p>
-            <p><b>Link Deploy: </b>{linkDeploy}</p>
+            <h1>{name}</h1>
+            <p>
+                <b>Link Github: </b>
+                <a href={linkGithub} target="_blank" rel="noreferrer">
+                    <i class="fa fa-github"> {linkGithub} </i>    
+                    
+                </a>
+            </p>
+            <p>
+                <b>Link Deploy Project: </b>
+                <a href={linkGithub} target="_blank" rel="noreferrer">
+                    <i class="fa fa-heart"> {linkDeploy} </i>
+                    
+                </a>
+                
+            </p>
             <p><b>Áp dụng: </b>{strTech}</p>
         </div>
     )
